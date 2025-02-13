@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 2px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            position: relative;
+            text-align: center;
+            color: #ffffff;
+            height: 280px; 
+            overflow: hidden;
+        }
+        .header img.bg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+            filter: brightness(50%);
+        }
+        .header img.logo {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: auto;
+        }
+        .header h2 {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 32px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #ffffff;
+        }
+        .content {
+            padding: 20px;
+            background: #222;
+            text-align: center;
+        }
+        .content h3 {
+            color: #d9534f;
+            font-size: 20px;
+        }
+        .content h4 {
+            color: #fff;
+            font-size: 20px;
+            line-height: 1.5;
+        }
+        .content p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #fff;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 20px;
+            position: relative;
+        }
+        .cta a {
+            display: inline-block;
+            background: #d9534f;
+            color: #ffffff;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .cta a:hover {
+            background: #c9302c;
+        }
+        .video-container {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .video-container img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .video-container::after {
+            content: '\25BA';
+            font-size: 50px;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 15px;
+            border-radius: 50%;
+        }
+        .video-container a {background: none;}
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #fff;
+            color: #000;
+            font-size: 14px;
+            border-radius: 0 0 8px 8px;
+        }
+        .footer p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #000;
+        }
+        .footer img {
+            margin-top: 10px;
+            width: 150px;
+        }
+        .footer-bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #111;
+            padding: 15px;
+            border-radius: 0 0 8px 8px;
+        }
+        .footer-bottom img {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+        .social-text {
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+        .social-icons a {
+            display: inline-block;
+        }
+        .social-icons img {
+            width: 32px;
+            height: 32px;
+        }
+        p {
+            font-size: 12px;
+            line-height: 1.5;
+            color: #000;
+            text-align: center;
+        }
+        .footer-links {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #fff;
+        }
+        .footer-links a {
+            text-decoration: underline;
+            color: #d9534f;
+            margin: 0 10px;
+        }
+        .footer-links a:hover {
+            color: #c9302c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img class="bg" src="topo.jpeg" alt="Imagem de fundo dramática">
+            <img class="logo" src="logo.png" alt="Logo">
+            <h2>LA-MEN-TÁ-VEL.</h2>
+        </div>
+        <div class="content">
+            <h3>##nome##,</h3>
+            <p>É isso que define o que estão fazendo com o seu, o nosso clube. <br><b>Fique atento.</b></p>
+            <h4>Tem gente agindo em benefício próprio e deixando de escanteio você, eu e todos.</h4>
+            <p>A situação do clube é <strong>GRAVE</strong>, mas eu garanto: dá para mudar este placar.</p>
+            <div class="cta">
+                <p><strong>Assista a este vídeo revelador e entenda do que estou falando.</strong></p>
+                <div class="video-container">
+                    <img src="video-alerta.gif" alt="GIF do vídeo">
+                </div>
+                <p><a href="http://lipsum.org">Clique aqui para assistir ao vídeo completo</a></p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Não tenho nada a esconder, nem medo de dar a cara a tapa. Gravei este vídeo aqui especialmente para você, amigo.</p>
+            <p>Quis deixar registrado o meu compromisso.</p>
+            <p>Eu lhe peço que assista ao vídeo até o final, pois deixei um recado pessoal para você. Tenho certeza de que voltaremos a nos falar.</p>
+            <p>Saudações,</p>
+            <img src="assinatura.png" alt="Assinatura">
+            <p><strong>Fulano de Tal</strong></p>
+            <p><em>Vice-Presidente</em></p>
+        </div>
+        <div class="footer-bottom">
+            <img src="logo.png" alt="Logo">
+            <p class="social-text">Acompanhe-nos</p>
+            <div class="social-icons">
+                <a href="#"><img src="ico-facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="ico-insta.png" alt="Instagram"></a>
+                <a href="#"><img src="ico-youtube.png" alt="YouTube"></a>
+            </div>
+            <p style="color: #fff;">Praça João da Silva, 123 - CEP 0000-000 - São Paulo - SP</p>
+            <div class="footer-links">
+                <a href="mailto:#">Mande para um amigo!</a> | 
+                <a href="link-da-politica-de-privacidade">Política de Privacidade</a> | 
+                <a href="#">Fale Conosco</a>
+            </div>
+        </div>
+    </div>
+    <p>Se não deseja mais receber nossos emails, <a href="#" style="color: #d9534f; text-decoration: none;">clique aqui</a> para se descadastrar.</p>
+</body>
+</html>
